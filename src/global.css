@@ -83,6 +83,10 @@ a {
     text-decoration: none;
 }
 
+.sidebar .main-navigation a:hover {
+    filter: brightness(0.8);
+}
+
 .content {
     border-left: 1px solid #2f2f2f;
     border-right: 1px solid #2f2f2f;

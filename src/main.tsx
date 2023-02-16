@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <aside className="sidebar">
         <img className="logo" src={twitterLogo} alt="Logo Twitter" />
         <nav className="main-navigation">
-          <a href="#"><img src={homeLogo} alt="Home Icon" />Home</a>
+          <a href="#" className="active"><img src={homeLogo} alt="Home Icon" />Home</a>
           <a href="#"><img src={hastagLogo} alt="Hastag Icon" />Explore</a>
           <a href="#"><img src={bellLogo} alt="Bell Icon" />Notifications</a>
           <a href="#"><img src={messageLogo} alt="Message Icon" />Messages</a>
@@ -30,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <button className="new-twitter" type="button">
           Twitter
         </button>
+        <video></video>
       </aside>
       <div className="content">
         

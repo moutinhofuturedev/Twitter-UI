@@ -83,6 +83,10 @@ a {
     text-decoration: none;
 }
 
+.sidebar .main-navigation a.active {
+    color: var(--twitter-blue);
+}
+
 .sidebar .main-navigation a:hover {
     filter: brightness(0.8);
 }

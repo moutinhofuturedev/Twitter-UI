@@ -1,0 +1,12 @@
+:root {
+    --twitter-blue: #1da1f2;
+    --twitter-white: #ffffff;
+    --twitter-gray: #2e2e2e;
+}
+
+.separator {
+    background: #202020;
+    border-top: 1px solid var(--twitter-gray);
+    border-bottom: 1px solid var(--twitter-gray);
+    height: 0.75rem;
+}

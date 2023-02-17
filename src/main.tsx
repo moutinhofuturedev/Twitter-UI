@@ -11,6 +11,7 @@ import bookmarkLogo from './assets/bookmark.svg'
 import filetextLogo from './assets/file-text.svg'
 import userLogo from './assets/user.svg'
 import dotsthreeLogo from './assets/dotsthree.svg'
+import { Sparkle } from 'phosphor-react'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -18,14 +19,14 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <aside className="sidebar">
         <img className="logo" src={twitterLogo} alt="Logo Twitter" />
         <nav className="main-navigation">
-          <a href="#" className="active"><img src={homeLogo} alt="Home Icon" />Home</a>
-          <a href="#"><img src={hastagLogo} alt="Hastag Icon" />Explore</a>
-          <a href="#"><img src={bellLogo} alt="Bell Icon" />Notifications</a>
-          <a href="#"><img src={messageLogo} alt="Message Icon" />Messages</a>
-          <a href="#"><img src={bookmarkLogo} alt="Bookmark Icon" />Bookmarks</a>
-          <a href="#"><img src={filetextLogo} alt="File Text Icon" />Lists</a>
-          <a href="#"><img src={userLogo} alt="User Icon" />Profile</a>
-          <a href="#"><img src={dotsthreeLogo} alt="Dotsthree Icon" />More</a>
+          <a href="#home" className="active"><img src={homeLogo} alt="Home Icon" />Home</a>
+          <a href="#explore"><img src={hastagLogo} alt="Hastag Icon" />Explore</a>
+          <a href="#notifications"><img src={bellLogo} alt="Bell Icon" />Notifications</a>
+          <a href="#messages"><img src={messageLogo} alt="Message Icon" />Messages</a>
+          <a href="#bookmarks"><img src={bookmarkLogo} alt="Bookmark Icon" />Bookmarks</a>
+          <a href="#lists"><img src={filetextLogo} alt="File Text Icon" />Lists</a>
+          <a href="#profile"><img src={userLogo} alt="User Icon" />Profile</a>
+          <a href="#more"><img src={dotsthreeLogo} alt="Dotsthree Icon" />More</a>
         </nav>
         <button className="new-twitter" type="button">
           Twitter
@@ -33,7 +34,23 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <video></video>
       </aside>
       <div className="content">
-        
+        <main className="timeline">
+          <div className="timeline-header">
+            Home
+            <Sparkle />
+          </div>
+
+          <form className="new-tweet-form">
+            <label htmlFor="tweet">
+              <img src="https://github.com/moutinhofuturedev.png" alt="Paulo Moutinho" />
+              <textarea id="tweet" placeholder="What's happening"></textarea>
+            </label>
+
+            <button type="submit">Tweet</button>
+          </form>
+
+          <div className="separator"/>
+        </main>
       </div>
     </div>
   </React.StrictMode>,

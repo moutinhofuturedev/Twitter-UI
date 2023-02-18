@@ -1,0 +1,46 @@
+:root {
+    --twitter-blue: #1da1f2;
+    --twitter-white: #ffffff;
+    --twitter-gray: #2e2e2e;
+}
+
+.new-tweet-form {
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.new-tweet-form label {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.new-tweet-form label img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+}
+
+.new-tweet-form label textarea {
+    flex: 1;
+    border: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    resize: none;
+    background: #121214;
+    color: var(--twitter-white);
+    outline: none;
+}
+
+.new-tweet-form button {
+    background: var(--twitter-blue);
+    color: var(--twitter-white);
+    padding: 0.75rem 1.5rem;
+    margin-left: auto;
+    border-radius: 9999px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 900;
+}

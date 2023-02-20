@@ -10,12 +10,14 @@ import filetextLogo from '../../assets/file-text.svg'
 import userLogo from '../../assets/user.svg'
 import dotsthreeLogo from '../../assets/dotsthree.svg'
 
+import { NavLink } from 'react-router-dom'
+
 export function Sidebar() {
     return (
         <aside className="sidebar">
             <img className="logo" src={twitterLogo} alt="Logo Twitter" />
             <nav className="main-navigation">
-                <a href="#home" className="active"><img src={homeLogo} alt="Home Icon" />Home</a>
+                <NavLink to="/"><img src={homeLogo} alt="Home Icon" />Home</NavLink>
                 <a href="#explore"><img src={hastagLogo} alt="Hastag Icon" />Explore</a>
                 <a href="#notifications"><img src={bellLogo} alt="Bell Icon" />Notifications</a>
                 <a href="#messages"><img src={messageLogo} alt="Message Icon" />Messages</a>

@@ -1,17 +1,28 @@
-
+import { FormEvent, useState } from "react"
 import { Header } from "../../components/Header"
 import { Separator } from "../../components/Separator"
 import { Tweet } from "../../components/Tweet"
 import { Form } from "../../components/Form"
 import "../../components/Form/index.css"
 
-const tweets = ["Hello", "How are you", "I'm fine"]
-
 export function Timeline() {
+  const [ newTweet, setNewTweet ] = useState("")
+  const [ tweets, setTweets ] = useState<string[]>([])
+
+  function createNewTweet(event: FormEvent) {
+    event.preventDefault()
+
+    setTweets([...tweets ,newTweet])
+    setNewTweet("")
+  }
+
   return (
     <main className="timeline">
       <Header title="Home" />
       <Form
+        onSubmit={createNewTweet}
+        onChange={(event) => setNewTweet(event.target.value)}
+        value={newTweet}
         className="new-tweet-form"
         placeholder="What's happening?"
         text="Tweet"

@@ -19,7 +19,7 @@ export function Timeline() {
     setNewTweet("")
   }
 
-  function handleHotKeySubmit(event: KeyboardEvent) {
+  function handleHotKeySubmit(event: React.KeyboardEvent) {
     if (event.key === "Enter" && (event.ctrlKey || event.metaKey)) {
       setTweets([...tweets ,newTweet])
       setNewTweet("")

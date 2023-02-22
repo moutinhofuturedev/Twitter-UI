@@ -16,7 +16,7 @@ export function Status() {
     setNewAnswer("");
   }
 
-  function handleHotKeySubmit(event: KeyboardEvent) {
+  function handleHotKeySubmit(event: React.KeyboardEvent) {
     if (event.key === "Enter" && (event.ctrlKey || event.metaKey)) {
       setAnswers([...answers ,newAnswer])
       setNewAnswer("")

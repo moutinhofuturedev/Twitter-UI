@@ -1,13 +1,6 @@
 import "./index.css"
-
-interface FormProps {
-  className?: string;
-  placeholder?: string;
-  text?: string;
-  value?: string;
-  onSubmit?: (value: any) => void;
-  onChange?: (value: any) => void;
-}
+import { FormProps } from "../../types/type";
+import { PaperPlaneRight } from "phosphor-react";
 
 export function Form(props: FormProps) {
   return (
@@ -21,11 +14,15 @@ export function Form(props: FormProps) {
           id="tweet"
           placeholder={props.placeholder}
           onChange={props.onChange}
+          onKeyDown={props.onKeyDown}
           value={props.value}
         ></textarea>
       </label>
 
-      <button type="submit">{props.text}</button>
+      <button type="submit">
+        <PaperPlaneRight />
+        <span>{props.text}</span>
+      </button>
     </form>
   );
 }

@@ -31,6 +31,12 @@
     font-weight: 900;
 }
 
+.sidebar .new-twitter svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+}
+
 .sidebar .new-twitter:hover {
     filter: brightness(0.9);
 }
@@ -56,4 +62,23 @@
 
 .sidebar .main-navigation a:hover {
     filter: brightness(0.8);
+}
+
+@media (max-width: 780px) {
+    .sidebar {
+        padding: 1.5rem 0.75rem;
+        align-items: center;
+    }
+
+    .main-navigation a span {
+        display: none;
+    }
+
+    .sidebar .new-twitter span {
+        display: none;
+    }
+
+    .sidebar .new-twitter svg {
+        display: block
+    }
 }

@@ -44,3 +44,23 @@
     font-size: 1rem;
     font-weight: 900;
 }
+
+.new-tweet-form button svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+}
+
+@media (max-width: 780px) {
+    .new-tweet-form button {
+        padding: 0.75rem;
+    }
+    
+    .new-tweet-form button svg {
+        display: block
+    }
+
+    .new-tweet-form button span {
+        display: none
+    }
+}

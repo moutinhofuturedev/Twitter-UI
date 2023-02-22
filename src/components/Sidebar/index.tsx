@@ -11,24 +11,50 @@ import userLogo from '../../assets/user.svg'
 import dotsthreeLogo from '../../assets/dotsthree.svg'
 
 import { NavLink } from 'react-router-dom'
+import { Pencil } from "phosphor-react"
 
 export function Sidebar() {
-    return (
-        <aside className="sidebar">
-            <img className="logo" src={twitterLogo} alt="Logo Twitter" />
-            <nav className="main-navigation">
-                <NavLink to="/"><img src={homeLogo} alt="Home Icon" />Home</NavLink>
-                <a href="#explore"><img src={hastagLogo} alt="Hastag Icon" />Explore</a>
-                <a href="#notifications"><img src={bellLogo} alt="Bell Icon" />Notifications</a>
-                <a href="#messages"><img src={messageLogo} alt="Message Icon" />Messages</a>
-                <a href="#bookmarks"><img src={bookmarkLogo} alt="Bookmark Icon" />Bookmarks</a>
-                <a href="#lists"><img src={filetextLogo} alt="File Text Icon" />Lists</a>
-                <a href="#profile"><img src={userLogo} alt="User Icon" />Profile</a>
-                <a href="#more"><img src={dotsthreeLogo} alt="Dotsthree Icon" />More</a>
-            </nav>
-            <button className="new-twitter" type="button">
-                Twitter
-            </button>
-        </aside>
-    )
+  return (
+    <aside className="sidebar">
+      <img className="logo" src={twitterLogo} alt="Logo Twitter" />
+      <nav className="main-navigation">
+        <NavLink to="/">
+          <img src={homeLogo} alt="Home Icon" />
+          <span>Home</span>
+        </NavLink>
+        <a href="#explore">
+          <img src={hastagLogo} alt="Hastag Icon" />
+          <span>Explore</span>
+        </a>
+        <a href="#notifications">
+          <img src={bellLogo} alt="Bell Icon" />
+          <span>Notifications</span>
+        </a>
+        <a href="#messages">
+          <img src={messageLogo} alt="Message Icon" />
+          <span>Messages</span>
+        </a>
+        <a href="#bookmarks">
+          <img src={bookmarkLogo} alt="Bookmark Icon" />
+          <span>Bookmarks</span>
+        </a>
+        <a href="#lists">
+          <img src={filetextLogo} alt="File Text Icon" />
+          <span>Lists</span>
+        </a>
+        <a href="#profile">
+          <img src={userLogo} alt="User Icon" />
+          <span>Profile</span>
+        </a>
+        <a href="#more">
+          <img src={dotsthreeLogo} alt="Dotsthree Icon" />
+          <span>More</span>
+        </a>
+      </nav>
+      <button className="new-twitter" type="button">
+        <Pencil />
+        <span>Twitter</span>
+      </button>
+    </aside>
+  );
 }

@@ -16,6 +16,13 @@ export function Status() {
     setNewAnswer("");
   }
 
+  function handleHotKeySubmit(event: KeyboardEvent) {
+    if (event.key === "Enter" && (event.ctrlKey || event.metaKey)) {
+      setAnswers([...answers ,newAnswer])
+      setNewAnswer("")
+    }
+  }
+
   return (
     <main className="status">
       <Header title="Tweet" />
@@ -24,6 +31,7 @@ export function Status() {
       <Form
         onSubmit={createNewAnswer}
         onChange={(event) => setNewAnswer(event.target.value)}
+        onKeyDown={handleHotKeySubmit}
         value={newAnswer}
         className="answer-tweet-form"
         placeholder="Tweet your answer"

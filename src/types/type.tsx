@@ -1,3 +1,4 @@
+// Form typing
 export interface FormProps {
     className: string;
     placeholder: string;
@@ -6,4 +7,14 @@ export interface FormProps {
     onSubmit: (value: React.FormEvent<HTMLFormElement>) => void;
     onChange: (value: React.ChangeEvent<HTMLTextAreaElement>) => void;
     onKeyDown: (event: React.KeyboardEvent) => void;
+}
+
+// Header typing
+export interface HeaderProps {
+    title: string;
+}
+
+// Tweet typing
+export interface TweetProps {
+    content: string
 }

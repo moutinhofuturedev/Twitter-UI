@@ -1,14 +1,11 @@
 import "./index.css"
 import { Sparkle } from "phosphor-react";
+import { HeaderProps } from "../../types/type";
 
-interface HeaderProps {
-    title: string;
-}
-
-export function Header({ title }: HeaderProps) {
+export function Header(props: HeaderProps) {
     return (
         <div className="timeline-header">
-            {title}
+            {props.title}
             <Sparkle />
         </div>
     )

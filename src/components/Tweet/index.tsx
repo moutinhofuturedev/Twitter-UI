@@ -1,10 +1,7 @@
 import './index.css'
 import { ArrowsClockwise, ChatCircle, Heart } from 'phosphor-react'
+import { TweetProps } from '../../types/type'
 import { Link } from 'react-router-dom'
-
-interface TweetProps {
-    content: string
-}
 
 export function Tweet(props: TweetProps) {
     return (

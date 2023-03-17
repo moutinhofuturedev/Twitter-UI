@@ -1,15 +1,9 @@
-:root {
-    --twitter-blue: #1da1f2;
-    --twitter-white: #ffffff;
-    --twitter-gray: #2e2e2e;
-}
-
 .answer-tweet-form {
     padding: 1.5rem 1.25rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border-bottom: 1px solid #2e2e2e;
+    border-bottom: 1px solid var(--twitter-gray);
 }
 
 .answer-tweet-form label {
@@ -32,7 +26,7 @@
     font-weight: 500;
     margin-top: 1.25rem;
     resize: none;
-    background: #121214;
+    background: var(--twitter-black);
     color: var(--twitter-white);
     outline: none;
 }

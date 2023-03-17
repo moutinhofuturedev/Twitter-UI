@@ -8,6 +8,8 @@
     --twitter-blue: #1da1f2;
     --twitter-white: #ffffff;
     --twitter-gray: #2e2e2e;
+    --twitter-gray-alternative: #828282;
+    --twitter-black: #121214;
 }
 
 body, input, textarea, button {
@@ -15,7 +17,7 @@ body, input, textarea, button {
 }
 
 body {
-    background: #121214;
+    background: var(--twitter-black);
     color: var(--twitter-white);
     -webkit-font-smoothing: antialiased;
 }

@@ -1,9 +1,3 @@
-:root {
-    --twitter-blue: #1da1f2;
-    --twitter-white: #ffffff;
-    --twitter-gray: #2e2e2e;
-}
-
 .new-tweet-form {
     padding: 1.5rem 1.25rem;
     display: flex;
@@ -29,7 +23,7 @@
     font-weight: 500;
     margin-top: 0.75rem;
     resize: none;
-    background: #121214;
+    background: var(--twitter-black);
     color: var(--twitter-white);
     outline: none;
 }

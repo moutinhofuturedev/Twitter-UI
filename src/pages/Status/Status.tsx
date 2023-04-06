@@ -37,8 +37,8 @@ export function Status() {
         placeholder="Tweet your answer"
         text="Answer"
       />
-      {answers.map((answer, index) => {
-        return <Tweet key={index} content={answer} />;
+      {answers.map((answer) => {
+        return <Tweet key={answer} content={answer} />;
       })}
     </main>
   );
